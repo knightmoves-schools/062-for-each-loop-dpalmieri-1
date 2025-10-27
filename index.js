@@ -2,7 +2,10 @@ let todos = ['first todo', 'second todo', 'third todo'];
 let i = 0;
 
 function markAsDone(todos){
-    todos.foreach(todos1 => 'done - ' + todos[i]);
+    if(todos.length > i){
+        todos.foreach(todos1 => 'done - ' + todos[i]);
+        i++
+    }
     return todos;
 }
 
