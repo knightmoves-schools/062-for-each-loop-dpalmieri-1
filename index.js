@@ -2,7 +2,7 @@ let todos = ['first todo', 'second todo', 'third todo'];
 let i = 0;
 
 function markAsDone(todos){
-    foreach(todos => 'done - ' + todos);
+    todos.foreach(todos1 => 'done - ' + todos);
     return todos;
 }
 
