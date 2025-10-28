@@ -1,12 +1,11 @@
-let todos = ['first todo', 'second todo', 'third todo'];
-let i = 0;
 
 function markAsDone(todos){
-    if(todos.length > i){
-        todos.foreach(todos1 => 'done - ' + todos[i]);
-        i++
-    }
+    let newTodos = ['first','second','third'];
+
+    todos.forEach(todos) => {
+        newTodos.push('done - ' + todos);
+    };
     return todos;
 }
 
-document.getElementById('result').innerHTML = todos;
+document.getElementById('result').innerHTML = markAsDone();
