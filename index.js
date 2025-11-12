@@ -1,11 +1,13 @@
+let todos = ['one', 'two', 'three'];
+
 
 function markAsDone(todos){
-    let newTodos = ['first','second','third'];
+    let newTodos = [];
 
-    todos.forEach(todos) => {
-        newTodos.push('done - ' + todos);
+    todos.forEach(todos => newTodos.push('done - ' + todos));
+
+    return newTodos;
     };
-    return todos;
-}
+    
 
 document.getElementById('result').innerHTML = markAsDone();
